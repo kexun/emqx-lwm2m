@@ -12,8 +12,7 @@ dep_emqx       = git https://github.com/emqtt/emqttd emqx30
 dep_cuttlefish = git https://github.com/emqx/cuttlefish
 
 ERLC_OPTS += +debug_inf
-ERLC_OPTS += +'{parse_transform, lager_transform}'
-TEST_ERLC_OPTS += +'{parse_transform, lager_transform}'
+
 
 include erlang.mk
 
